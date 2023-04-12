@@ -1,0 +1,344 @@
+Column Name: day_of_week 
+day_of_week Values: day_of_week
+friday       2041
+thursday     1851
+wednesday    1840
+tuesday      1770
+monday       1681
+saturday     1666
+sunday       1467
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_driver 
+age_band_of_driver Values: age_band_of_driver
+18-30       4271
+31-50       4087
+over 51     1585
+unknown     1548
+under 18     825
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_driver 
+sex_of_driver Values: sex_of_driver
+male       11437
+female       701
+unknown      178
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: educational_level 
+educational_level Values: educational_level
+junior high school    7619
+elementary school     2163
+high school           1110
+above high school      362
+writing & reading      176
+unknown                100
+illiterate              45
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_driver_relation 
+vehicle_driver_relation Values: vehicle_driver_relation
+employee    9627
+owner       1973
+other        123
+unknown       14
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: driving_experience 
+driving_experience Values: driving_experience
+5-10yr        3363
+2-5yr         2613
+above 10yr    2262
+1-2yr         1756
+below 1yr     1342
+no licence     118
+unknown         33
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_vehicle 
+type_of_vehicle Values: type_of_vehicle
+automobile              3205
+lorry (41?100q)         2186
+other                   1208
+pick up upto 10q         811
+public (12 seats)        711
+stationwagen             687
+lorry (11?40q)           541
+public (13?45 seats)     532
+public (> 45 seats)      404
+long lorry               383
+taxi                     265
+motorcycle               177
+special vehicle           84
+ridden horse              76
+turbo                     46
+bajaj                     29
+bicycle                   21
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: owner_of_vehicle 
+owner_of_vehicle Values: owner_of_vehicle
+owner           10459
+governmental     1041
+organization      312
+other              22
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: service_year_of_vehicle 
+service_year_of_vehicle Values: service_year_of_vehicle
+unknown       2883
+2-5yrs        1792
+above 10yr    1324
+5-10yrs       1280
+1-2yr          827
+below 1yr      282
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: defect_of_vehicle 
+defect_of_vehicle Values: defect_of_vehicle
+no defect    7777
+7              76
+5              36
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: area_accident_occured 
+area_accident_occured Values: area_accident_occured
+other                              3819
+office areas                       3451
+residential areas                  2060
+church areas                       1060
+industrial areas                    456
+school areas                        415
+recreational areas                  328
+outside rural areas                 218
+hospital areas                      121
+market areas                         63
+rural village areas                  44
+unknown                              22
+rural village areasoffice areas      20
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: lanes_or_medians 
+lanes_or_medians Values: lanes_or_medians
+two-way (divided with broken lines road marking)    4411
+undivided two way                                   3796
+other                                               1660
+double carriageway (median)                         1020
+one way                                              845
+two-way (divided with solid lines road marking)      142
+unknown                                               57
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_allignment 
+road_allignment Values: road_allignment
+tangent road with flat terrain                   10459
+tangent road with mild grade and flat terrain      501
+steep grade downward with mountainous terrain      429
+tangent road with mountainous terrain and          396
+gentle horizontal curve                            163
+escarpments                                        113
+sharp reverse curve                                 57
+tangent road with rolling terrain                   37
+steep grade upward with mountainous terrain         19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: types_of_junction 
+types_of_junction Values: types_of_junction
+y shape        4543
+no junction    3837
+crossing       2177
+other           445
+unknown         191
+o shape         164
+t shape          60
+x shape          12
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_type 
+road_surface_type Values: road_surface_type
+asphalt roads                       11296
+earth roads                           358
+gravel roads                          242
+other                                 167
+asphalt roads with some distress       81
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_conditions 
+road_surface_conditions Values: road_surface_conditions
+dry                     9340
+wet or damp             2904
+snow                      70
+flood over 3cm. deep       2
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: light_conditions 
+light_conditions Values: light_conditions
+daylight                   8798
+darkness - lights lit      3286
+darkness - no lighting      192
+darkness - lights unlit      40
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: weather_conditions 
+weather_conditions Values: weather_conditions
+normal               10063
+raining               1331
+other                  296
+unknown                292
+cloudy                 125
+windy                   98
+snow                    61
+raining and windy       40
+fog or mist             10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_collision 
+type_of_collision Values: type_of_collision
+vehicle with vehicle collision             8774
+collision with roadside objects            1786
+collision with pedestrians                  896
+rollover                                    397
+collision with animals                      171
+collision with roadside-parked vehicles      54
+fall from vehicles                           34
+other                                        26
+unknown                                      14
+with train                                    9
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: number_of_vehicles_involved 
+number_of_vehicles_involved Values: number_of_vehicles_involved
+2    8340
+1    1996
+3    1568
+4     363
+6      42
+7       7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: number_of_casualties 
+number_of_casualties Values: number_of_casualties
+1    8397
+2    2290
+3     909
+4     394
+5     207
+6      89
+7      22
+8       8
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_movement 
+vehicle_movement Values: vehicle_movement
+going straight         8158
+moving backward         985
+other                   937
+reversing               563
+turnover                489
+getting off             339
+entering a junction     193
+overtaking               96
+unknown                  88
+stopping                 61
+u-turn                   50
+waiting to go            39
+parked                   10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_class 
+casualty_class Values: casualty_class
+driver or rider    4944
+na                 4443
+pedestrian         1649
+passenger          1280
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_casualty 
+sex_of_casualty Values: sex_of_casualty
+male      5253
+na        4443
+female    2620
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_casualty 
+age_band_of_casualty Values: age_band_of_casualty
+na          4443
+18-30       3145
+31-50       2455
+under 18    1035
+over 51      994
+5            244
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_severity 
+casualty_severity Values: casualty_severity
+3     7076
+na    4443
+2      771
+1       26
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: work_of_casuality 
+work_of_casuality Values: work_of_casuality
+driver           5903
+self-employed    2044
+employee          553
+other             463
+student           103
+unemployed         33
+unknown            19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: fitness_of_casuality 
+fitness_of_casuality Values: fitness_of_casuality
+normal          9608
+normalnormal      19
+deaf              18
+other             18
+blind             18
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: pedestrian_movement 
+pedestrian_movement Values: pedestrian_movement
+not a pedestrian                                                                                                                         11390
+crossing from nearside - masked by parked or stationot a pedestrianry vehicle                                                              337
+unknown or other                                                                                                                           293
+crossing from driver's nearside                                                                                                            140
+crossing from offside - masked by  parked or stationot a pedestrianry vehicle                                                               72
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing)                                                              46
+walking along in carriageway, back to traffic                                                                                               18
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing) - masked by parked or stationot a pedestrianry vehicle       13
+walking along in carriageway, facing traffic                                                                                                 7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: cause_of_accident 
+cause_of_accident Values: cause_of_accident
+no distancing                           2263
+changing lane to the right              1808
+changing lane to the left               1473
+driving carelessly                      1402
+no priority to vehicle                  1207
+moving backward                         1137
+no priority to pedestrian                721
+other                                    456
+overtaking                               430
+driving under the influence of drugs     340
+driving to the left                      284
+getting off the vehicle improperly       197
+driving at high speed                    174
+overturning                              149
+turnover                                  78
+overspeed                                 61
+overloading                               59
+drunk driving                             27
+unknown                                   25
+improper parking                          25
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: accident_severity 
+accident_severity Values: accident_severity
+slight injury     10415
+serious injury     1743
+fatal injury        158
+Name: count, dtype: int64 
+-------------------------------------------- 
