@@ -1,0 +1,883 @@
+Column Name: sex_of_driver 
+sex_of_driver Values: sex_of_driver
+male      11437
+female      701
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_vehicle 
+type_of_vehicle Values: type_of_vehicle
+automobile              3205
+lorry (41?100q)         2186
+other                   1208
+pick up upto 10q         811
+public (12 seats)        711
+stationwagen             687
+lorry (11?40q)           541
+public (13?45 seats)     532
+public (> 45 seats)      404
+long lorry               383
+taxi                     265
+motorcycle               177
+special vehicle           84
+ridden horse              76
+turbo                     46
+bajaj                     29
+bicycle                   21
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: owner_of_vehicle 
+owner_of_vehicle Values: owner_of_vehicle
+owner           10459
+governmental     1041
+organization      312
+other              22
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: area_accident_occured 
+area_accident_occured Values: area_accident_occured
+other                              3819
+office areas                       3451
+residential areas                  2060
+church areas                       1060
+industrial areas                    456
+school areas                        415
+recreational areas                  328
+outside rural areas                 218
+hospital areas                      121
+market areas                         63
+rural village areas                  44
+rural village areasoffice areas      20
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: lanes_or_medians 
+lanes_or_medians Values: lanes_or_medians
+two-way (divided with broken lines road marking)    4411
+undivided two way                                   3796
+other                                               1660
+double carriageway (median)                         1020
+one way                                              845
+two-way (divided with solid lines road marking)      142
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_allignment 
+road_allignment Values: road_allignment
+tangent road with flat terrain                   10459
+tangent road with mild grade and flat terrain      501
+steep grade downward with mountainous terrain      429
+tangent road with mountainous terrain and          396
+gentle horizontal curve                            163
+escarpments                                        113
+sharp reverse curve                                 57
+tangent road with rolling terrain                   37
+steep grade upward with mountainous terrain         19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: types_of_junction 
+types_of_junction Values: types_of_junction
+y shape        4543
+no junction    3837
+crossing       2177
+other           445
+o shape         164
+t shape          60
+x shape          12
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_type 
+road_surface_type Values: road_surface_type
+asphalt roads                       11296
+earth roads                           358
+gravel roads                          242
+other                                 167
+asphalt roads with some distress       81
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_conditions 
+road_surface_conditions Values: road_surface_conditions
+dry                     9340
+wet or damp             2904
+snow                      70
+flood over 3cm. deep       2
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: light_conditions 
+light_conditions Values: light_conditions
+daylight                   8798
+darkness - lights lit      3286
+darkness - no lighting      192
+darkness - lights unlit      40
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: weather_conditions 
+weather_conditions Values: weather_conditions
+normal               10063
+raining               1331
+other                  296
+cloudy                 125
+windy                   98
+snow                    61
+raining and windy       40
+fog or mist             10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_collision 
+type_of_collision Values: type_of_collision
+vehicle with vehicle collision             8774
+collision with roadside objects            1786
+collision with pedestrians                  896
+rollover                                    397
+collision with animals                      171
+collision with roadside-parked vehicles      54
+fall from vehicles                           34
+other                                        26
+with train                                    9
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_movement 
+vehicle_movement Values: vehicle_movement
+going straight         8158
+moving backward         985
+other                   937
+reversing               563
+turnover                489
+getting off             339
+entering a junction     193
+overtaking               96
+stopping                 61
+u-turn                   50
+waiting to go            39
+parked                   10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_class 
+casualty_class Values: casualty_class
+driver or rider    4944
+pedestrian         1649
+passenger          1280
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_casualty 
+sex_of_casualty Values: sex_of_casualty
+male      5253
+female    2620
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: work_of_casuality 
+work_of_casuality Values: work_of_casuality
+driver           5903
+self-employed    2044
+employee          553
+other             463
+student           103
+unemployed         33
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: fitness_of_casuality 
+fitness_of_casuality Values: fitness_of_casuality
+normal          9608
+normalnormal      19
+deaf              18
+other             18
+blind             18
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: pedestrian_movement 
+pedestrian_movement Values: pedestrian_movement
+not a pedestrian                                                                                                                         11390
+crossing from nearside - masked by parked or stationot a pedestrianry vehicle                                                              337
+unknown or other                                                                                                                           293
+crossing from driver's nearside                                                                                                            140
+crossing from offside - masked by  parked or stationot a pedestrianry vehicle                                                               72
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing)                                                              46
+walking along in carriageway, back to traffic                                                                                               18
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing) - masked by parked or stationot a pedestrianry vehicle       13
+walking along in carriageway, facing traffic                                                                                                 7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: cause_of_accident 
+cause_of_accident Values: cause_of_accident
+no distancing                           2263
+changing lane to the right              1808
+changing lane to the left               1473
+driving carelessly                      1402
+no priority to vehicle                  1207
+moving backward                         1137
+no priority to pedestrian                721
+other                                    456
+overtaking                               430
+driving under the influence of drugs     340
+driving to the left                      284
+getting off the vehicle improperly       197
+driving at high speed                    174
+overturning                              149
+turnover                                  78
+overspeed                                 61
+overloading                               59
+drunk driving                             27
+improper parking                          25
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_driver 
+sex_of_driver Values: sex_of_driver
+male      11437
+female      701
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_vehicle 
+type_of_vehicle Values: type_of_vehicle
+automobile              3205
+lorry (41?100q)         2186
+other                   1208
+pick up upto 10q         811
+public (12 seats)        711
+stationwagen             687
+lorry (11?40q)           541
+public (13?45 seats)     532
+public (> 45 seats)      404
+long lorry               383
+taxi                     265
+motorcycle               177
+special vehicle           84
+ridden horse              76
+turbo                     46
+bajaj                     29
+bicycle                   21
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: owner_of_vehicle 
+owner_of_vehicle Values: owner_of_vehicle
+owner           10459
+governmental     1041
+organization      312
+other              22
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: area_accident_occured 
+area_accident_occured Values: area_accident_occured
+other                              3819
+office areas                       3451
+residential areas                  2060
+church areas                       1060
+industrial areas                    456
+school areas                        415
+recreational areas                  328
+outside rural areas                 218
+hospital areas                      121
+market areas                         63
+rural village areas                  44
+rural village areasoffice areas      20
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: lanes_or_medians 
+lanes_or_medians Values: lanes_or_medians
+two-way (divided with broken lines road marking)    4411
+undivided two way                                   3796
+other                                               1660
+double carriageway (median)                         1020
+one way                                              845
+two-way (divided with solid lines road marking)      142
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_allignment 
+road_allignment Values: road_allignment
+tangent road with flat terrain                   10459
+tangent road with mild grade and flat terrain      501
+steep grade downward with mountainous terrain      429
+tangent road with mountainous terrain and          396
+gentle horizontal curve                            163
+escarpments                                        113
+sharp reverse curve                                 57
+tangent road with rolling terrain                   37
+steep grade upward with mountainous terrain         19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: types_of_junction 
+types_of_junction Values: types_of_junction
+y shape        4543
+no junction    3837
+crossing       2177
+other           445
+o shape         164
+t shape          60
+x shape          12
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_type 
+road_surface_type Values: road_surface_type
+asphalt roads                       11296
+earth roads                           358
+gravel roads                          242
+other                                 167
+asphalt roads with some distress       81
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_conditions 
+road_surface_conditions Values: road_surface_conditions
+dry                     9340
+wet or damp             2904
+snow                      70
+flood over 3cm. deep       2
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: light_conditions 
+light_conditions Values: light_conditions
+daylight                   8798
+darkness - lights lit      3286
+darkness - no lighting      192
+darkness - lights unlit      40
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: weather_conditions 
+weather_conditions Values: weather_conditions
+normal               10063
+raining               1331
+other                  296
+cloudy                 125
+windy                   98
+snow                    61
+raining and windy       40
+fog or mist             10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_collision 
+type_of_collision Values: type_of_collision
+vehicle with vehicle collision             8774
+collision with roadside objects            1786
+collision with pedestrians                  896
+rollover                                    397
+collision with animals                      171
+collision with roadside-parked vehicles      54
+fall from vehicles                           34
+other                                        26
+with train                                    9
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_movement 
+vehicle_movement Values: vehicle_movement
+going straight         8158
+moving backward         985
+other                   937
+reversing               563
+turnover                489
+getting off             339
+entering a junction     193
+overtaking               96
+stopping                 61
+u-turn                   50
+waiting to go            39
+parked                   10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_class 
+casualty_class Values: casualty_class
+driver or rider    4944
+pedestrian         1649
+passenger          1280
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_casualty 
+sex_of_casualty Values: sex_of_casualty
+male      5253
+female    2620
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: work_of_casuality 
+work_of_casuality Values: work_of_casuality
+driver           5903
+self-employed    2044
+employee          553
+other             463
+student           103
+unemployed         33
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: fitness_of_casuality 
+fitness_of_casuality Values: fitness_of_casuality
+normal          9608
+normalnormal      19
+deaf              18
+other             18
+blind             18
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: pedestrian_movement 
+pedestrian_movement Values: pedestrian_movement
+not a pedestrian                                                                                                                         11390
+crossing from nearside - masked by parked or stationot a pedestrianry vehicle                                                              337
+unknown or other                                                                                                                           293
+crossing from driver's nearside                                                                                                            140
+crossing from offside - masked by  parked or stationot a pedestrianry vehicle                                                               72
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing)                                                              46
+walking along in carriageway, back to traffic                                                                                               18
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing) - masked by parked or stationot a pedestrianry vehicle       13
+walking along in carriageway, facing traffic                                                                                                 7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: cause_of_accident 
+cause_of_accident Values: cause_of_accident
+no distancing                           2263
+changing lane to the right              1808
+changing lane to the left               1473
+driving carelessly                      1402
+no priority to vehicle                  1207
+moving backward                         1137
+no priority to pedestrian                721
+other                                    456
+overtaking                               430
+driving under the influence of drugs     340
+driving to the left                      284
+getting off the vehicle improperly       197
+driving at high speed                    174
+overturning                              149
+turnover                                  78
+overspeed                                 61
+overloading                               59
+drunk driving                             27
+improper parking                          25
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_driver 
+sex_of_driver Values: sex_of_driver
+male      11437
+female      701
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_vehicle 
+type_of_vehicle Values: type_of_vehicle
+automobile              3205
+lorry (41?100q)         2186
+other                   1208
+pick up upto 10q         811
+public (12 seats)        711
+stationwagen             687
+lorry (11?40q)           541
+public (13?45 seats)     532
+public (> 45 seats)      404
+long lorry               383
+taxi                     265
+motorcycle               177
+special vehicle           84
+ridden horse              76
+turbo                     46
+bajaj                     29
+bicycle                   21
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: owner_of_vehicle 
+owner_of_vehicle Values: owner_of_vehicle
+owner           10459
+governmental     1041
+organization      312
+other              22
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: area_accident_occured 
+area_accident_occured Values: area_accident_occured
+other                              3819
+office areas                       3451
+residential areas                  2060
+church areas                       1060
+industrial areas                    456
+school areas                        415
+recreational areas                  328
+outside rural areas                 218
+hospital areas                      121
+market areas                         63
+rural village areas                  44
+rural village areasoffice areas      20
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: lanes_or_medians 
+lanes_or_medians Values: lanes_or_medians
+two-way (divided with broken lines road marking)    4411
+undivided two way                                   3796
+other                                               1660
+double carriageway (median)                         1020
+one way                                              845
+two-way (divided with solid lines road marking)      142
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_allignment 
+road_allignment Values: road_allignment
+tangent road with flat terrain                   10459
+tangent road with mild grade and flat terrain      501
+steep grade downward with mountainous terrain      429
+tangent road with mountainous terrain and          396
+gentle horizontal curve                            163
+escarpments                                        113
+sharp reverse curve                                 57
+tangent road with rolling terrain                   37
+steep grade upward with mountainous terrain         19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: types_of_junction 
+types_of_junction Values: types_of_junction
+y shape        4543
+no junction    3837
+crossing       2177
+other           445
+o shape         164
+t shape          60
+x shape          12
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_type 
+road_surface_type Values: road_surface_type
+asphalt roads                       11296
+earth roads                           358
+gravel roads                          242
+other                                 167
+asphalt roads with some distress       81
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_conditions 
+road_surface_conditions Values: road_surface_conditions
+dry                     9340
+wet or damp             2904
+snow                      70
+flood over 3cm. deep       2
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: light_conditions 
+light_conditions Values: light_conditions
+daylight                   8798
+darkness - lights lit      3286
+darkness - no lighting      192
+darkness - lights unlit      40
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: weather_conditions 
+weather_conditions Values: weather_conditions
+normal               10063
+raining               1331
+other                  296
+cloudy                 125
+windy                   98
+snow                    61
+raining and windy       40
+fog or mist             10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_collision 
+type_of_collision Values: type_of_collision
+vehicle with vehicle collision             8774
+collision with roadside objects            1786
+collision with pedestrians                  896
+rollover                                    397
+collision with animals                      171
+collision with roadside-parked vehicles      54
+fall from vehicles                           34
+other                                        26
+with train                                    9
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_movement 
+vehicle_movement Values: vehicle_movement
+going straight         8158
+moving backward         985
+other                   937
+reversing               563
+turnover                489
+getting off             339
+entering a junction     193
+overtaking               96
+stopping                 61
+u-turn                   50
+waiting to go            39
+parked                   10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_class 
+casualty_class Values: casualty_class
+driver or rider    4944
+pedestrian         1649
+passenger          1280
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_casualty 
+sex_of_casualty Values: sex_of_casualty
+male      5253
+female    2620
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: work_of_casuality 
+work_of_casuality Values: work_of_casuality
+driver           5903
+self-employed    2044
+employee          553
+other             463
+student           103
+unemployed         33
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: fitness_of_casuality 
+fitness_of_casuality Values: fitness_of_casuality
+normal          9608
+normalnormal      19
+deaf              18
+other             18
+blind             18
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: pedestrian_movement 
+pedestrian_movement Values: pedestrian_movement
+not a pedestrian                                                                                                                         11390
+crossing from nearside - masked by parked or stationot a pedestrianry vehicle                                                              337
+unknown or other                                                                                                                           293
+crossing from driver's nearside                                                                                                            140
+crossing from offside - masked by  parked or stationot a pedestrianry vehicle                                                               72
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing)                                                              46
+walking along in carriageway, back to traffic                                                                                               18
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing) - masked by parked or stationot a pedestrianry vehicle       13
+walking along in carriageway, facing traffic                                                                                                 7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: cause_of_accident 
+cause_of_accident Values: cause_of_accident
+no distancing                           2263
+changing lane to the right              1808
+changing lane to the left               1473
+driving carelessly                      1402
+no priority to vehicle                  1207
+moving backward                         1137
+no priority to pedestrian                721
+other                                    456
+overtaking                               430
+driving under the influence of drugs     340
+driving to the left                      284
+getting off the vehicle improperly       197
+driving at high speed                    174
+overturning                              149
+turnover                                  78
+overspeed                                 61
+overloading                               59
+drunk driving                             27
+improper parking                          25
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_driver 
+sex_of_driver Values: sex_of_driver
+male      11437
+female      701
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_vehicle 
+type_of_vehicle Values: type_of_vehicle
+automobile              3205
+lorry (41?100q)         2186
+other                   1208
+pick up upto 10q         811
+public (12 seats)        711
+stationwagen             687
+lorry (11?40q)           541
+public (13?45 seats)     532
+public (> 45 seats)      404
+long lorry               383
+taxi                     265
+motorcycle               177
+special vehicle           84
+ridden horse              76
+turbo                     46
+bajaj                     29
+bicycle                   21
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: owner_of_vehicle 
+owner_of_vehicle Values: owner_of_vehicle
+owner           10459
+governmental     1041
+organization      312
+other              22
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: area_accident_occured 
+area_accident_occured Values: area_accident_occured
+other                              3819
+office areas                       3451
+residential areas                  2060
+church areas                       1060
+industrial areas                    456
+school areas                        415
+recreational areas                  328
+outside rural areas                 218
+hospital areas                      121
+market areas                         63
+rural village areas                  44
+rural village areasoffice areas      20
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: lanes_or_medians 
+lanes_or_medians Values: lanes_or_medians
+two-way (divided with broken lines road marking)    4411
+undivided two way                                   3796
+other                                               1660
+double carriageway (median)                         1020
+one way                                              845
+two-way (divided with solid lines road marking)      142
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_allignment 
+road_allignment Values: road_allignment
+tangent road with flat terrain                   10459
+tangent road with mild grade and flat terrain      501
+steep grade downward with mountainous terrain      429
+tangent road with mountainous terrain and          396
+gentle horizontal curve                            163
+escarpments                                        113
+sharp reverse curve                                 57
+tangent road with rolling terrain                   37
+steep grade upward with mountainous terrain         19
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: types_of_junction 
+types_of_junction Values: types_of_junction
+y shape        4543
+no junction    3837
+crossing       2177
+other           445
+o shape         164
+t shape          60
+x shape          12
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_type 
+road_surface_type Values: road_surface_type
+asphalt roads                       11296
+earth roads                           358
+gravel roads                          242
+other                                 167
+asphalt roads with some distress       81
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: road_surface_conditions 
+road_surface_conditions Values: road_surface_conditions
+dry                     9340
+wet or damp             2904
+snow                      70
+flood over 3cm. deep       2
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: light_conditions 
+light_conditions Values: light_conditions
+daylight                   8798
+darkness - lights lit      3286
+darkness - no lighting      192
+darkness - lights unlit      40
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: weather_conditions 
+weather_conditions Values: weather_conditions
+normal               10063
+raining               1331
+other                  296
+cloudy                 125
+windy                   98
+snow                    61
+raining and windy       40
+fog or mist             10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: type_of_collision 
+type_of_collision Values: type_of_collision
+vehicle with vehicle collision             8774
+collision with roadside objects            1786
+collision with pedestrians                  896
+rollover                                    397
+collision with animals                      171
+collision with roadside-parked vehicles      54
+fall from vehicles                           34
+other                                        26
+with train                                    9
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_movement 
+vehicle_movement Values: vehicle_movement
+going straight         8158
+moving backward         985
+other                   937
+reversing               563
+turnover                489
+getting off             339
+entering a junction     193
+overtaking               96
+stopping                 61
+u-turn                   50
+waiting to go            39
+parked                   10
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_class 
+casualty_class Values: casualty_class
+driver or rider    4944
+pedestrian         1649
+passenger          1280
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: sex_of_casualty 
+sex_of_casualty Values: sex_of_casualty
+male      5253
+female    2620
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: work_of_casuality 
+work_of_casuality Values: work_of_casuality
+driver           5903
+self-employed    2044
+employee          553
+other             463
+student           103
+unemployed         33
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: fitness_of_casuality 
+fitness_of_casuality Values: fitness_of_casuality
+normal          9608
+normalnormal      19
+deaf              18
+other             18
+blind             18
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: pedestrian_movement 
+pedestrian_movement Values: pedestrian_movement
+not a pedestrian                                                                                                                         11390
+crossing from nearside - masked by parked or stationot a pedestrianry vehicle                                                              337
+unknown or other                                                                                                                           293
+crossing from driver's nearside                                                                                                            140
+crossing from offside - masked by  parked or stationot a pedestrianry vehicle                                                               72
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing)                                                              46
+walking along in carriageway, back to traffic                                                                                               18
+in carriageway, stationot a pedestrianry - not crossing  (standing or playing) - masked by parked or stationot a pedestrianry vehicle       13
+walking along in carriageway, facing traffic                                                                                                 7
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: cause_of_accident 
+cause_of_accident Values: cause_of_accident
+no distancing                           2263
+changing lane to the right              1808
+changing lane to the left               1473
+driving carelessly                      1402
+no priority to vehicle                  1207
+moving backward                         1137
+no priority to pedestrian                721
+other                                    456
+overtaking                               430
+driving under the influence of drugs     340
+driving to the left                      284
+getting off the vehicle improperly       197
+driving at high speed                    174
+overturning                              149
+turnover                                  78
+overspeed                                 61
+overloading                               59
+drunk driving                             27
+improper parking                          25
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: vehicle_driver_relation 
+vehicle_driver_relation Values: vehicle_driver_relation
+employee    9627
+owner       1973
+other        123
+Name: count, dtype: int64 
+-------------------------------------------- 

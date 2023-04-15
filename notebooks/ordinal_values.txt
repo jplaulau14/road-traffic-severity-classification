@@ -1,0 +1,312 @@
+Column Name: day_of_week 
+day_of_week Values: day_of_week
+friday       2041
+thursday     1851
+wednesday    1840
+tuesday      1770
+monday       1681
+saturday     1666
+sunday       1467
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_driver 
+age_band_of_driver Values: age_band_of_driver
+18-30       4271
+31-50       4087
+over 51     1585
+under 18     825
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: educational_level 
+educational_level Values: educational_level
+junior high school    7619
+elementary school     2163
+high school           1110
+above high school      362
+writing & reading      176
+illiterate              45
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: driving_experience 
+driving_experience Values: driving_experience
+5-10yr        3363
+2-5yr         2613
+above 10yr    2262
+1-2yr         1756
+below 1yr     1342
+no licence     118
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: service_year_of_vehicle 
+service_year_of_vehicle Values: service_year_of_vehicle
+2-5yrs        1792
+above 10yr    1324
+5-10yrs       1280
+1-2yr          827
+below 1yr      282
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: defect_of_vehicle 
+defect_of_vehicle Values: defect_of_vehicle
+no defect    7777
+7              76
+5              36
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_casualty 
+age_band_of_casualty Values: age_band_of_casualty
+18-30       3145
+31-50       2455
+under 18    1035
+over 51      994
+5            244
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_severity 
+casualty_severity Values: casualty_severity
+3    7076
+2     771
+1      26
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: accident_severity 
+accident_severity Values: accident_severity
+slight injury     10415
+serious injury     1743
+fatal injury        158
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: day_of_week 
+day_of_week Values: day_of_week
+friday       2041
+thursday     1851
+wednesday    1840
+tuesday      1770
+monday       1681
+saturday     1666
+sunday       1467
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_driver 
+age_band_of_driver Values: age_band_of_driver
+18-30       4271
+31-50       4087
+over 51     1585
+under 18     825
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: educational_level 
+educational_level Values: educational_level
+junior high school    7619
+elementary school     2163
+high school           1110
+above high school      362
+writing & reading      176
+illiterate              45
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: driving_experience 
+driving_experience Values: driving_experience
+5-10yr        3363
+2-5yr         2613
+above 10yr    2262
+1-2yr         1756
+below 1yr     1342
+no licence     118
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: service_year_of_vehicle 
+service_year_of_vehicle Values: service_year_of_vehicle
+2-5yrs        1792
+above 10yr    1324
+5-10yrs       1280
+1-2yr          827
+below 1yr      282
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: defect_of_vehicle 
+defect_of_vehicle Values: defect_of_vehicle
+no defect    7777
+7              76
+5              36
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_casualty 
+age_band_of_casualty Values: age_band_of_casualty
+18-30       3145
+31-50       2455
+under 18    1035
+over 51      994
+5            244
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_severity 
+casualty_severity Values: casualty_severity
+3    7076
+2     771
+1      26
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: accident_severity 
+accident_severity Values: accident_severity
+slight injury     10415
+serious injury     1743
+fatal injury        158
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: day_of_week 
+day_of_week Values: day_of_week
+friday       2041
+thursday     1851
+wednesday    1840
+tuesday      1770
+monday       1681
+saturday     1666
+sunday       1467
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_driver 
+age_band_of_driver Values: age_band_of_driver
+18-30       4271
+31-50       4087
+over 51     1585
+under 18     825
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: educational_level 
+educational_level Values: educational_level
+junior high school    7619
+elementary school     2163
+high school           1110
+above high school      362
+writing & reading      176
+illiterate              45
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: driving_experience 
+driving_experience Values: driving_experience
+5-10yr        3363
+2-5yr         2613
+above 10yr    2262
+1-2yr         1756
+below 1yr     1342
+no licence     118
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: service_year_of_vehicle 
+service_year_of_vehicle Values: service_year_of_vehicle
+2-5yrs        1792
+above 10yr    1324
+5-10yrs       1280
+1-2yr          827
+below 1yr      282
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: defect_of_vehicle 
+defect_of_vehicle Values: defect_of_vehicle
+no defect    7777
+7              76
+5              36
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_casualty 
+age_band_of_casualty Values: age_band_of_casualty
+18-30       3145
+31-50       2455
+under 18    1035
+over 51      994
+5            244
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_severity 
+casualty_severity Values: casualty_severity
+3    7076
+2     771
+1      26
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: accident_severity 
+accident_severity Values: accident_severity
+slight injury     10415
+serious injury     1743
+fatal injury        158
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: day_of_week 
+day_of_week Values: day_of_week
+friday       2041
+thursday     1851
+wednesday    1840
+tuesday      1770
+monday       1681
+saturday     1666
+sunday       1467
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_driver 
+age_band_of_driver Values: age_band_of_driver
+18-30       4271
+31-50       4087
+over 51     1585
+under 18     825
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: educational_level 
+educational_level Values: educational_level
+junior high school    7619
+elementary school     2163
+high school           1110
+above high school      362
+writing & reading      176
+illiterate              45
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: driving_experience 
+driving_experience Values: driving_experience
+5-10yr        3363
+2-5yr         2613
+above 10yr    2262
+1-2yr         1756
+below 1yr     1342
+no licence     118
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: service_year_of_vehicle 
+service_year_of_vehicle Values: service_year_of_vehicle
+2-5yrs        1792
+above 10yr    1324
+5-10yrs       1280
+1-2yr          827
+below 1yr      282
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: defect_of_vehicle 
+defect_of_vehicle Values: defect_of_vehicle
+no defect    7777
+7              76
+5              36
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: age_band_of_casualty 
+age_band_of_casualty Values: age_band_of_casualty
+18-30       3145
+31-50       2455
+under 18    1035
+over 51      994
+5            244
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: casualty_severity 
+casualty_severity Values: casualty_severity
+3    7076
+2     771
+1      26
+Name: count, dtype: int64 
+-------------------------------------------- 
+Column Name: accident_severity 
+accident_severity Values: accident_severity
+slight injury     10415
+serious injury     1743
+fatal injury        158
+Name: count, dtype: int64 
+-------------------------------------------- 
