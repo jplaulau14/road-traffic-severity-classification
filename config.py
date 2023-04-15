@@ -6,5 +6,4 @@ EXPANDED_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'da
 CLEAN_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'clean_data.csv'))
 BALANCED_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'balanced_data.csv'))
 X_SELECTED_TREE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'X_selected_tree.csv'))
-X_SELECTED_RFE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'X_selected_rfe.csv'))
 MODELS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'models'))
