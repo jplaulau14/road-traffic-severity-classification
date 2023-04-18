@@ -1,8 +1,10 @@
 import logging
 import time
-from typing import List, Dict
+from typing import List, Dict, Tuple, Optional
 import numpy as np
 import pandas as pd
+
+from sklearn.base import BaseEstimator
 
 from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, AdaBoostClassifier
@@ -15,6 +17,7 @@ from sklearn.metrics import (
 import plotly.graph_objs as go
 import plotly.io as pio
 import plotly.subplots as sp
+import plotly.express as px
 
 def train_and_evaluate_multiple_models(X_train: pd.DataFrame, y_train: pd.Series, X_test: pd.DataFrame, y_test: pd.Series, models: list[str], metrics: list[str] = ["accuracy"], average: str = "weighted") -> dict[str, dict[str, float]]:
     """
@@ -158,6 +161,120 @@ def model_performance_report(model, y_test: pd.Series, y_pred: pd.Series) -> Non
     fig.layout.titlefont.size = 14
 
     pio.show(fig, filename='model-performance')
+
+def tune_hyperparameters(
+    X_train: pd.DataFrame,
+    y_train: pd.Series,
+    models: list[str] = ["XGBoost", "Random Forest", "Extra Trees", "Adaboost"],
+    scoring: str = "accuracy",
+    cv_type: str = "KFold",
+    n_splits: int = 5,
+    tuning_type: str = "GridSearchCV",
+    xgb_params: dict = None,
+    rf_params: dict = None,
+    et_params: dict = None,
+    ab_params: dict = None,
+) -> dict[str, dict[str, float]]:
+    """
+    Automatically perform hyperparameter tuning for the selected models.
+
+    Parameters
+    ----------
+    X_train: pd.DataFrame
+        The features for the training data.
+
+    y_train: pd.Series
+        The target variable for the training data.
+
+    models: list[str], optional, default: ["XGBoost", "Random Forest", "Extra Trees", "Adaboost"]
+        A list of classifiers to use, can include 'XGBoost', 'Random Forest', 'Extra Trees', 'Adaboost'.
+
+    scoring: str, optional, default: "accuracy"
+        The scoring metric to be used for hyperparameter tuning.
+
+    cv_type: str, optional, default: "KFold"
+        The type of cross-validation to use, one of ["KFold", "StratifiedKFold"].
+
+    tuning_type: str, optional, default: "GridSearchCV"
+        The type of hyperparameter tuning to use, one of ["GridSearchCV", "RandomizedSearchCV"].
+
+    xgb_params: dict, optional
+        A dictionary of hyperparameters for the XGBoost model.
+
+    rf_params: dict, optional
+        A dictionary of hyperparameters for the Random Forest model.
+
+    et_params: dict, optional
+        A dictionary of hyperparameters for the Extra Trees model.
+
+    ab_params: dict, optional
+        A dictionary of hyperparameters for the Adaboost model.
+
+    Returns
+    -------
+    results: dict[str, dict[str, float]]
+        A dictionary with the model names as keys, then a nested dictionary with the keys 'best_params_' and 'best_score_' and their corresponding values as the values.
+    """
+    model_dict = {
+        "XGBoost": XGBClassifier,
+        "Random Forest": RandomForestClassifier,
+        "Extra Trees": ExtraTreesClassifier,
+        "Adaboost": AdaBoostClassifier,
+    }
+
+    param_dict = {
+        "XGBoost": xgb_params,
+        "Random Forest": rf_params,
+        "Extra Trees": et_params,
+        "Adaboost": ab_params,
+    }
+
+    if cv_type == "KFold":
+        cv = KFold(n_splits=n_splits)
+    elif cv_type == "StratifiedKFold":
+        cv = StratifiedKFold(n_splits=n_splits)
+    else:
+        raise ValueError(f"Invalid cv_type: {cv_type}. Must be one of: ['KFold', 'StratifiedKFold']")
+
+    if tuning_type == "GridSearchCV":
+        tuning_function = GridSearchCV
+    elif tuning_type == "RandomizedSearchCV":
+        tuning_function = RandomizedSearchCV
+    else:
+        raise ValueError(f"Invalid tuning_type: {tuning_type}. Must be one of: ['GridSearchCV', 'RandomizedSearchCV']")
+
+    results = {}
+    for model in models:
+        if model not in model_dict:
+            raise ValueError(f"Invalid model name: {model}. Must be one of: {list(model_dict.keys())}")
+
+        classifier = model_dict[model]()
+        params = param_dict[model]
+
+        if params is None:
+            raise ValueError(f"Hyperparameters for {model} are not provided. Please provide a dictionary of hyperparameters for the model.")
+
+        tuner = tuning_function(classifier, params, scoring=scoring, cv=cv)
+
+        total_candidates = len(list(ParameterGrid(params)))
+        total_fits = n_splits * total_candidates
+        logging.info(f"Fitting {n_splits} folds for each of {total_candidates} candidates, totalling {total_fits} fits")
+
+        logging.info(f"Tuning hyperparameters for {model}...")
+        start_time = time.time()
+        tuner.fit(X_train, y_train)
+        tuning_time = time.time() - start_time
+
+        model_results = {
+            "best_params_": tuner.best_params_,
+            "best_score_": tuner.best_score_,
+            "tuning_time": tuning_time
+        }
+
+        results[model] = model_results
+        logging.info(f"Hyperparameter tuning for {model} complete.\n")
+
+    return results
 
 def tune_hyperparameters(
     X_train: pd.DataFrame,
