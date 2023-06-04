@@ -4,58 +4,29 @@ from collections import Counter
 from sklearn.impute import KNNImputer
 from imblearn.over_sampling import SMOTE
 
-def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
+def rename_columns(df: pd.DataFrame, col_map: dict = None) -> pd.DataFrame:
     """
     Rename columns of a dataframe.
 
     Parameters
     ----------
-    raw_raw_df: pd.DataFrame
+    df: pd.DataFrame
         The dataframe to rename the columns of.
+
+    col_map: dict
+        A dictionary mapping the current column names to the new column names.
 
     Returns
     -------
-    raw_raw_df: pd.DataFrame
+    df: pd.DataFrame
         The dataframe with renamed columns.
     """
 
-    # Rename columns
-    col_map={
-        'Time': 'time',
-        'Day_of_week': 'day_of_week',
-        'Age_band_of_driver': 'driver_age',
-        'Sex_of_driver': 'driver_sex',
-        'Educational_level': 'educational_level',
-        'Vehicle_driver_relation': 'vehicle_driver_relation',
-        'Driving_experience': 'driving_experience',
-        'Type_of_vehicle': 'vehicle_type',
-        'Owner_of_vehicle': 'vehicle_owner',
-        'Service_year_of_vehicle': 'service_year',
-        'Defect_of_vehicle': 'vehicle_defect',
-        'Area_accident_occured': 'accident_area',
-        'Lanes_or_Medians': 'lanes',
-        'Road_allignment': 'road_allignment',
-        'Types_of_Junction': 'junction_type',
-        'Road_surface_type': 'surface_type',
-        'Road_surface_conditions': 'road_surface_conditions',
-        'Light_conditions': 'light_condition',
-        'Weather_conditions': 'weather_condition',
-        'Type_of_collision': 'collision_type',
-        'Number_of_vehicles_involved': 'vehicles_involved',
-        'Number_of_casualties': 'casualties',
-        'Vehicle_movement': 'vehicle_movement',
-        'Casualty_class': 'casualty_class',
-        'Sex_of_casualty': 'casualty_sex' , 
-        'Age_band_of_casualty': 'casualty_age', 
-        'Casualty_severity': 'casualty_severity',
-        'Work_of_casuality': 'casualty_work', 
-        'Fitness_of_casuality': 'casualty_fitness',
-        'Pedestrian_movement': 'pedestrian_movement',
-        'Cause_of_accident': 'accident_cause',
-        'Accident_severity': 'accident_severity'
-    }
-
-    df.rename(columns=col_map, inplace=True)
+    if col_map is None:
+        # If col_map is None, just lowercase all the column names
+        df.columns = df.columns.str.lower()
+    else:
+        df.rename(columns=col_map, inplace=True)
 
     return df
 
